@@ -22,12 +22,10 @@ const getAccountLink = (region, summonerID) => {
 };
 
 const getMatchesLink = (region, puuid) => {
-  // https://americas.api.riotgames.com/lol/match/v5/matches/by-puuid/rFfvqXXmciFv2FtRHEozlS4Ug9tboig5trNDlcDogR30nBy0rtxjodtHAa4lzcOUt6YBdCJAhYkCGQ/ids?start=0&count=10&api_key=RGAPI-270b8451-9294-448e-8131-0eef4b5d4323
   return `https://${region}.api.riotgames.com/lol/match/v5/matches/by-puuid/${puuid}/ids?start=0&count=10&api_key=${API_KEY}`;
 }
 
 const getMatchLink = (region, matchID) => {
-  // https://americas.api.riotgames.com/lol/match/v5/matches/NA1_4920555805?api_key=RGAPI-270b8451-9294-448e-8131-0eef4b5d4323
   return `https://${region}.api.riotgames.com/lol/match/v5/matches/${matchID}?api_key=${API_KEY}`;
 };
 
